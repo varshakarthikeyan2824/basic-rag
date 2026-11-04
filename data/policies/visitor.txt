@@ -1,0 +1,7 @@
+Visitor Policy
+
+All visitors must follow company security procedures.
+
+Visitors must register at the reception desk.
+
+Employees must accompany visitors inside restricted areas.

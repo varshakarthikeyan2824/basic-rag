@@ -1,0 +1,7 @@
+Employee Training Policy
+
+All employees can participate in approved training programs.
+
+Employees receive an annual training budget of 10000 rupees.
+
+Training requests must be approved by the reporting manager.

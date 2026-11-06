@@ -1,0 +1,93 @@
+
+[
+  {
+    "question": "How many annual leave days are employees eligible for?",
+    "expected_source": "annual_leave.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "What should employees do when they are unable to attend work?",
+    "expected_source": "attendance.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "What is the process for requesting casual leave?",
+    "expected_source": "casual_leave.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "How should employees protect confidential company data?",
+    "expected_source": "data_privacy.txt",
+    "expected_chunk_id": "0",
+    "user_role": "IT"
+  },
+  {
+    "question": "What rules apply to using company email?",
+    "expected_source": "email.txt",
+    "expected_chunk_id": "0",
+    "user_role": "IT"
+  },
+  {
+    "question": "How can employees claim business expenses?",
+    "expected_source": "expenses.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "How can an employee raise a workplace grievance?",
+    "expected_source": "grievance.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "What are the rules for using the company internet?",
+    "expected_source": "internet.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "What should employees do if their laptop is lost?",
+    "expected_source": "laptop.txt",
+    "expected_chunk_id": "0",
+    "user_role": "IT"
+  },
+  {
+    "question": "How is employee performance evaluated?",
+    "expected_source": "performance.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "Can employees work remotely?",
+    "expected_source": "remote_work.txt",
+    "expected_chunk_id": "0",
+    "user_role": "IT"
+  },
+  {
+    "question": "How many sick leave days are provided?",
+    "expected_source": "sick_leave.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "What is the resignation procedure?",
+    "expected_source": "resignation.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "How should employees request training?",
+    "expected_source": "training.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  },
+  {
+    "question": "What is the procedure for booking business travel?",
+    "expected_source": "travel.txt",
+    "expected_chunk_id": "0",
+    "user_role": "HR"
+  }
+]

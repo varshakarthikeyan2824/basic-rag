@@ -27,6 +27,7 @@ def search_chunks(query_embedding, tenant, user_role, limit=5):
                 FROM document_chunks
                 WHERE tenant = %s
                   AND %s = ANY(allowed_roles)
+                  AND strategy = 'fixed'
                 ORDER BY embedding <=> %s
                 LIMIT %s
                 """,

@@ -2,49 +2,55 @@ import os
 
 from groq import Groq
 
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-policy = """
-Sick Leave Policy
+def main():
+    client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-All employees are eligible for sick leave.
+    policy = """
+    Sick Leave Policy
 
-Employees receive 10 days of sick leave annually.
+    All employees are eligible for sick leave.
 
-Employees must inform their manager on the first day of absence.
-"""
+    Employees receive 10 days of sick leave annually.
 
-prompt = f"""
-Read the following company policy carefully.
+    Employees must inform their manager on the first day of absence.
+    """
 
-POLICY:
-{policy}
+    prompt = f"""
+    Read the following company policy carefully.
 
-TASK:
-Extract the following information:
-1. Number of sick leave days.
-2. Employee eligibility.
-3. Reporting process.
+    POLICY:
+    {policy}
 
-Return the answer as valid JSON:
-{{
-    "sick_leave_days": "",
-    "eligibility": "",
-    "reporting_process": ""
-}}
+    TASK:
+    Extract the following information:
+    1. Number of sick leave days.
+    2. Employee eligibility.
+    3. Reporting process.
 
-Do not invent information. If something is missing,
-write "Not specified".
-"""
+    Return the answer as valid JSON:
+    {{
+        "sick_leave_days": "",
+        "eligibility": "",
+        "reporting_process": ""
+    }}
 
-response = client.chat.completions.create(
-    model="openai/gpt-oss-20b",
-    messages=[{"role": "user", "content": prompt}],
-    temperature=0.2,
-)
+    Do not invent information. If something is missing,
+    write "Not specified".
+    """
 
-print("GROQ MODEL RESPONSE:")
-print(response.choices[0].message.content)
+    response = client.chat.completions.create(
+        model="openai/gpt-oss-20b",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.2,
+    )
 
-print("\nTOKEN USAGE:")
-print(response.usage)
+    print("GROQ MODEL RESPONSE:")
+    print(response.choices[0].message.content)
+
+    print("\nTOKEN USAGE:")
+    print(response.usage)
+
+
+if __name__ == "__main__":
+    main()
